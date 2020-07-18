@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    .red{
+      color:red;
+    }
+  </style>
+</head>
+<body>
+<div id="app">
+  <ul>
+    <li v-for="(item,index) in movies" :class="{red:moviesSelectIndex==index?true:false}" @click="selectClick(index)">{{item+index}}</li>
+  </ul>
+</div>
+
+<script src="../js/vue.js"></script>
+<script>
+  const app=new Vue({
+    el:'#app',
+    data:{
+      message:'Hello Vue',
+      movies: ['海王','海尔兄弟','火影忍者','进击的巨人'],
+      moviesSelectIndex:0,
+    },
+    methods:{
+      selectClick:function (data) {
+        this.moviesSelectIndex=data
+      }
+    }
+  })
+</script>
+
+</body>
+</html>

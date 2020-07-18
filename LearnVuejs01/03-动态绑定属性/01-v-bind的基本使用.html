@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div id="app">
+  <!--  错误的做法：这里不可以使用mustache语法-->
+  <!--  <img src="{{imgURL}}">-->
+
+  <!--  正确的做法：使用v-bind指令-->
+  <img v-bind:src="imgURL">
+  <a v-bind:href="aHref">unity</a>
+
+  <!--  语法糖的写法-->
+  <img :src="imgURL">
+  <a :href="aHref">unity</a>
+
+</div>
+
+<script src="../js/vue.js"></script>
+<script>
+  const app = new Vue({
+    el: '#app',
+    data: {
+      message: 'Hello Vue',
+      imgURL: 'https://unity-cn-cdn-prd.unitychina.cn/assets/styles/i/cn/home/popular-banner/lts_2019.c8d7a128098ccdfb487d7594b968e7e2.jpg',
+      aHref: 'https://unity.cn'
+    }
+  })
+</script>
+</body>
+</html>
