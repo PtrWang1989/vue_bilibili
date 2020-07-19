@@ -6,12 +6,12 @@
 </head>
 <body>
 <div id="app">
-  <h2>{{firstName+' '+lastName}}</h2>
-  <h2>{{firstName}} {{lastName}}</h2>
+<!--  <h2>{{firstName+' '+lastName}}</h2>-->
+<!--  <h2>{{firstName}} {{lastName}}</h2>-->
 
-  <h2>{{getFullName()}}</h2>
+<!--  <h2>{{getFullName()}}</h2>-->
 
-  <h2>{{fullName}}</h2>
+<!--  <h2>{{fullName}}</h2>-->
 </div>
 
 <script src="../js/vue.js"></script>
@@ -23,16 +23,16 @@
       firstName: 'Peter',
       lastName: 'Wang',
     },
-    methods:{
-      getFullName(){
-        return this.firstName+' '+this.lastName
-      }
-    },
-    computed:{
-      fullName:function () {
-        return this.firstName+' '+this.lastName
-      }
-    }
+    // methods:{
+    //   getFullName(){
+    //     return this.firstName+' '+this.lastName
+    //   }
+    // },
+    // computed:{
+    //   fullName:function () {
+    //     return this.firstName+' '+this.lastName
+    //   }
+    // }
   })
 </script>
 

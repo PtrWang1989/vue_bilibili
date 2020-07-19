@@ -12,7 +12,7 @@
 <body>
 <div id="app">
   <ul>
-    <li v-for="(item,index) in movies" :class="{red:moviesSelectIndex==index?true:false}" @click="selectClick(index)">{{item+index}}</li>
+    <li v-for="(item,index) in movies" :class="{red:moviesSelectIndex==index}" @click="selectClick(index)">{{item+index}}</li>
   </ul>
 </div>
 

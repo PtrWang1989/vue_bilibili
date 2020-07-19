@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <!--    v-if: 当条件为false 时，包含 v-if指令的元素，根本就不会存在dom中-->
+    <h2 v-if="isShow">{{message}}</h2>
+    <!--    切换频率低时选择 v-if -->
+
+    <!--    v-show: 当条件为 false 时，包含 v-show指令的元素，display 样式变化为 none-->
+    <h2 v-show="isShow">{{message}}</h2>
+    <!--    切换频率高时选择 v-show -->
+
+</div>
+
+<script src="../js/vue.js"></script>
+<script>
+    const app = new Vue({
+        el: '#app',
+        data: {
+            message: 'Hello Vue',
+            isShow: true
+        }
+    })
+</script>
+</body>
+</html>

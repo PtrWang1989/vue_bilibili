@@ -1,32 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Title</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
 <div id="app">
-<!--  1.直接拼接-->
-<h2>{{firstName}} {{lastName}}</h2>
-<!--  2通过定义methods-->
-  <h2>{{getFullName()}}</h2>
+    <!--  1.直接拼接-->
+    <h2>{{firstName}} {{lastName}}</h2>
+
+    <!--  2.通过定义methods n次调用 n次计算 -->
+    <h2>{{getFullName()}}</h2>
+
+    <!--  3.通过computed n次调用 1次计算（更加效率） -->
+    <h2>{{fullName}}</h2>
 </div>
 
 <script src="../js/vue.js"></script>
+
 <script>
-  const app=new Vue({
-    el:'#app',
-    data: {
-      message: 'Hello Vue',
-      firstName: 'Peter',
-      lastName: 'Wang'
-    },
-    methods:{
-      getFullName() {
-        return this.firstName+' '+this.lastName
-      }
-    }
-  })
+    const app = new Vue({
+        el: '#app',
+        data: {
+            message: 'Hello Vue',
+            firstName: 'Peter',
+            lastName: 'Wang'
+        },
+        methods: {
+            getFullName() {
+                return this.firstName + ' ' + this.lastName
+            }
+        },
+        computed: {
+            fullName: function () {
+                return this.firstName + '' + this.lastName
+            }
+        }
+    })
 </script>
 
 </body>
