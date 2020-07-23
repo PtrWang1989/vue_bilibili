@@ -15,13 +15,16 @@
   <!--  </label>-->
   <!--  <button :disabled="!isAgree">next</button>-->
 
-  <!--  2.checkbox 多选框-->
-  <!--  <input type="checkbox" value="篮球" v-model="hobbies">篮球-->
-  <!--  <input type="checkbox" value="足球" v-model="hobbies">足球-->
-  <!--  <input type="checkbox" value="乒乓球" v-model="hobbies">乒乓球-->
-  <!--  <input type="checkbox" value="羽毛球" v-model="hobbies">羽毛球-->
-  <!--  <h2>您的爱好是：{{hobbies}}</h2>-->
+<!--    2.checkbox 多选框-->
+    <input type="checkbox" value="篮球" v-model="hobbies">篮球
+    <input type="checkbox" value="足球" v-model="hobbies">足球
+    <input type="checkbox" value="乒乓球" v-model="hobbies">乒乓球
+    <input type="checkbox" value="羽毛球" v-model="hobbies">羽毛球
+    <h2>您的爱好是：{{hobbies}}</h2>
 
+  <label v-for="item in originHobbies" :for="item">
+    <input type="checkbox" :value="item" :id="item" v-model="hobbies">{{item}}
+  </label>
 </div>
 
 <script src="../js/vue.js"></script>
@@ -31,7 +34,8 @@
     data: {
       message: 'Hollow Vue',
       isAgree: false,
-      hobbies: []
+      hobbies: [],
+      originHobbies: ['篮球', '足球', '乒乓球', '羽毛球', '台球', '高尔夫球']
     }
   })
 </script>

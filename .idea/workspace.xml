@@ -20,13 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c1135d40-c493-45aa-9e37-f49168d566d9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/LearnVuejs01/09-v-model使用/01-v-model的基本使用.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LearnVuejs01/09-v-model使用/02-v-model原理.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LearnVuejs01/09-v-model使用/03-v-model结合radio类型.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LearnVuejs01/09-v-model使用/04-v-model结合checkbox类型.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LearnVuejs01/09-v-model使用/05-v-model结合select类型.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LearnVuejs01/09-v-model使用/06-v-model修饰符的使用.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LearnVuejs01/10-组件化开发/01-组件化的基本使用.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LearnVuejs01/10-组件化开发/02-全局组件和局部组件.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LearnVuejs01/10-组件化开发/03-父组件和子组件.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LearnVuejs01/10-组件化开发/04-组件的语法糖注册方式.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LearnVuejs01/10-组件化开发/05-组件模版的分离写法&amp;06-组件的数据存放.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LearnVuejs01/10-组件化开发/07-组件中的data为什么是函数.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LearnVuejs01/08-书籍购物车案例/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/LearnVuejs01/08-书籍购物车案例/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LearnVuejs01/09-v-model使用/04-v-model结合checkbox类型.html" beforeDir="false" afterPath="$PROJECT_DIR$/LearnVuejs01/09-v-model使用/04-v-model结合checkbox类型.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LearnVuejs01/09-v-model使用/05-v-model结合select类型.html" beforeDir="false" afterPath="$PROJECT_DIR$/LearnVuejs01/09-v-model使用/05-v-model结合select类型.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +84,7 @@
       <workItem from="1595423607428" duration="8427000" />
       <workItem from="1595472082399" duration="5299000" />
       <workItem from="1595485040230" duration="2248000" />
+      <workItem from="1595508084887" duration="6926000" />
     </task>
     <servers />
   </component>
