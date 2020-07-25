@@ -20,16 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c1135d40-c493-45aa-9e37-f49168d566d9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/LearnVuejs01/09-v-model使用/06-v-model修饰符的使用.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LearnVuejs01/10-组件化开发/01-组件化的基本使用.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LearnVuejs01/10-组件化开发/02-全局组件和局部组件.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LearnVuejs01/10-组件化开发/03-父组件和子组件.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LearnVuejs01/10-组件化开发/04-组件的语法糖注册方式.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LearnVuejs01/10-组件化开发/05-组件模版的分离写法&amp;06-组件的数据存放.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LearnVuejs01/10-组件化开发/07-组件中的data为什么是函数.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LearnVuejs01/10-组件化开发/08-组件通信-父组件想子组件传递数据.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LearnVuejs01/10-组件化开发/09-组件通信-父传子(props中的驼峰标示).html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LearnVuejs01/10-组件化开发/10-组件通信子传父(自定义事件).html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LearnVuejs01/09-v-model使用/04-v-model结合checkbox类型.html" beforeDir="false" afterPath="$PROJECT_DIR$/LearnVuejs01/09-v-model使用/04-v-model结合checkbox类型.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LearnVuejs01/09-v-model使用/05-v-model结合select类型.html" beforeDir="false" afterPath="$PROJECT_DIR$/LearnVuejs01/09-v-model使用/05-v-model结合select类型.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +55,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/LearnVuejs01/06-条件判断" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -85,6 +79,9 @@
       <workItem from="1595472082399" duration="5299000" />
       <workItem from="1595485040230" duration="2248000" />
       <workItem from="1595508084887" duration="6926000" />
+      <workItem from="1595643169183" duration="870000" />
+      <workItem from="1595664188683" duration="2949000" />
+      <workItem from="1595673544325" duration="3968000" />
     </task>
     <servers />
   </component>
@@ -104,14 +101,14 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="424" y="213" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595141450286">
+    <state x="424" y="213" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595648136874">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state x="424" y="213" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.1057/-1882.-16.1882.1057/1920.23.1440.877@0.23.1920.1057" timestamp="1595141450286" />
-    <state x="2389" y="183" key="SettingsEditor" timestamp="1595473413968">
-      <screen x="1920" y="0" width="1920" height="1160" />
+    <state x="424" y="213" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.1057/-1882.-16.1882.1057/1920.23.1440.877@0.23.1920.1057" timestamp="1595648136874" />
+    <state x="469" y="190" key="SettingsEditor" timestamp="1595674082767">
+      <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state x="469" y="190" key="SettingsEditor/0.23.1920.1057/-1881.-16.1881.1057/1920.23.1440.877@0.23.1920.1057" timestamp="1595428589786" />
+    <state x="469" y="190" key="SettingsEditor/0.23.1920.1057/-1881.-16.1881.1057/1920.23.1440.877@0.23.1920.1057" timestamp="1595674082767" />
     <state x="2389" y="183" key="SettingsEditor/1920.0.1920.1160/0.0.1920.1160@1920.0.1920.1160" timestamp="1595473413968" />
   </component>
   <component name="XDebuggerManager">

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+
+<!-- 驼峰命名的属性 v-bind 绑定时  大写字母前面 需要加 '-' 大写的字母改为小写-->
+<!-- 例子：cInfo ===> v-bind:c-info="info"-->
+<div id="app">
+  <cpn :c-info="info" :child-my-message="message"></cpn>
+  <cpn v-bind:c-info="info"></cpn>
+</div>
+
+<template id="cpn">
+  <div>
+    <h2>{{cInfo}}</h2>
+    <h2>{{childMyMessage}}</h2>
+  </div>
+</template>
+
+<script src="../js/vue.js"></script>
+<script>
+  const cpn = {
+    template: '#cpn',
+    props: {
+      cInfo: {
+        type: Object,
+        default: null,
+      },
+      childMyMessage: {
+        type: String,
+        default: ''
+      }
+    }
+  }
+
+  const app = new Vue({
+    el: '#app',
+    data: {
+      message: 'Hello Vue',
+      info: {
+        name: 'Peter',
+        age: '18',
+        height: 1.88,
+      }
+    },
+    components: {
+      cpn
+    }
+  })
+</script>
+</body>
+</html>
